@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Temperature</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/d3-v6-tip@1.0.6/build/d3-v6-tip.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        margin: 30px auto;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      h4 {
+        text-align: center;
+        font-size: 26px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .x-axis,
+      .y-axis {
+        font-size: 20px;
+      }
+
+      .d3-tip {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px;
+        border-radius: 6px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h2>Monthly Global Land-Surface Temperature</h2>
+    <h4>1753 - 2015: base temperature 8.66℃</h4> -->
+    <div class="container"></div>
+    <script src="./hot.js"></script>
+  </body>
+</html>
